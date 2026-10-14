@@ -1,0 +1,25 @@
+{
+  "id": "gibs",
+  "name": "Gibs",
+  "logo": "assets/brand/logo.svg",
+  "favicon": "assets/brand/favicon.png",
+  "language": "en",
+  "direction": "ltr",
+  "theme": {
+    "primary": "#E31B23",
+    "primaryDark": "#B9121A",
+    "whatsappGreen": "#1B8F3A",
+    "success": "#2FA84F",
+    "danger": "#E5493F"
+  },
+  "whatsapp": {
+    "number": "923133801788"
+  },
+  "pricing": {
+    "enabled": true,
+    "currencySymbol": "Rs",
+    "symbolPosition": "before",
+    "locale": "en-PK",
+    "decimals": 0
+  }
+}

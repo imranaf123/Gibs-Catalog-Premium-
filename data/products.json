@@ -1,0 +1,261 @@
+{
+  "packagingTypes": {
+    "full-carton": {
+      "label": "Full Carton",
+      "labelPlural": "Full Cartons",
+      "icon": "assets/packaging/full-carton.webp"
+    },
+    "half-carton": {
+      "label": "Half Carton",
+      "labelPlural": "Half Cartons",
+      "icon": "assets/packaging/half-carton.webp"
+    },
+    "individual-box": {
+      "label": "Individual Box",
+      "labelPlural": "Individual Boxes",
+      "imageMode": "product"
+    }
+  },
+  "products": [
+    {
+      "id": "chocolate-wafer",
+      "name": "Chocolate Wafer",
+      "category": "wafers",
+      "image": "assets/products/chocolate-wafer.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 boxes", "available": true, "min": 0, "max": 50, "step": 1, "price": 2570 },
+        { "type": "half-carton", "detail": "Contains 9 boxes", "available": true, "min": 0, "max": 50, "step": 1, "price": 1290 },
+        { "type": "individual-box", "detail": "One box per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 150 }
+      ]
+    },
+    {
+      "id": "cream-biscuits",
+      "name": "Cream Biscuits",
+      "category": "biscuits",
+      "image": "assets/products/cream-biscuits.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 boxes", "available": true, "min": 0, "max": 50, "step": 1, "price": 2050 },
+        { "type": "half-carton", "detail": "Contains 9 boxes", "available": true, "min": 0, "max": 50, "step": 1, "price": 1030 },
+        { "type": "individual-box", "detail": "One box per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 120 }
+      ]
+    },
+    {
+      "id": "salted-crackers",
+      "name": "Salted Crackers",
+      "category": "snacks",
+      "image": "assets/products/salted-crackers.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 boxes", "available": true, "min": 0, "max": 50, "step": 1, "price": 1540 },
+        { "type": "half-carton", "detail": "Contains 9 boxes", "available": true, "min": 0, "max": 50, "step": 1, "price": 770 },
+        { "type": "individual-box", "detail": "One box per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 90 }
+      ]
+    },
+    {
+      "id": "choco-cookies",
+      "name": "Choco Cookies",
+      "category": "chocolates",
+      "image": "assets/products/choco-cookies.webp",
+      "available": false,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 boxes", "available": false, "min": 0, "max": 50, "step": 1, "price": 3080 },
+        { "type": "half-carton", "detail": "Contains 9 boxes", "available": false, "min": 0, "max": 50, "step": 1, "price": 1540 },
+        { "type": "individual-box", "detail": "One box per unit", "available": false, "min": 0, "max": 99, "step": 1, "default": true, "price": 180 }
+      ]
+    },
+    {
+      "id": "potato-snacks",
+      "name": "Potato Snacks",
+      "category": "snacks",
+      "image": "assets/products/potato-snacks.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 boxes", "available": true, "min": 0, "max": 50, "step": 1, "price": 1710 },
+        { "type": "half-carton", "detail": "Contains 9 boxes", "available": true, "min": 0, "max": 50, "step": 1, "price": 860 },
+        { "type": "individual-box", "detail": "One box per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 100 }
+      ]
+    },
+    {
+      "id": "butter-biscuits",
+      "name": "Butter Biscuits",
+      "category": "biscuits",
+      "image": "assets/products/butter-biscuits.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 boxes", "available": true, "min": 0, "max": 50, "step": 1, "price": 1710 },
+        { "type": "half-carton", "detail": "Contains 9 boxes", "available": true, "min": 0, "max": 50, "step": 1, "price": 860 },
+        { "type": "individual-box", "detail": "One box per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 100 }
+      ]
+    },
+    {
+      "id": "crispee-banana-wafers",
+      "name": "Crispee Banana Wafers",
+      "category": "wafers",
+      "image": "assets/products/crispee-banana-wafers.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 2050 },
+        { "type": "half-carton", "detail": "Contains 9 packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1030 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 120 }
+      ]
+    },
+    {
+      "id": "crispee-orange-wafers",
+      "name": "Crispee Orange Wafers",
+      "category": "wafers",
+      "image": "assets/products/crispee-orange-wafers.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 2050 },
+        { "type": "half-carton", "detail": "Contains 9 packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1030 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 120 }
+      ]
+    },
+    {
+      "id": "crispee-strawberry-wafers",
+      "name": "Crispee Strawberry Wafers",
+      "category": "wafers",
+      "image": "assets/products/crispee-strawberry-wafers.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 2050 },
+        { "type": "half-carton", "detail": "Contains 9 packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1030 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 120 }
+      ]
+    },
+    {
+      "id": "joystik-chocolate-stick",
+      "name": "JoyStik Chocolate Stick",
+      "category": "chocolates",
+      "image": "assets/products/joystik-chocolate-stick.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 3080 },
+        { "type": "half-carton", "detail": "Contains 9 packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1540 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 180 }
+      ]
+    },
+    {
+      "id": "makhan-waala-butter-cookies",
+      "name": "Makhan Waala Butter Cookies",
+      "category": "biscuits",
+      "image": "assets/products/makhan-waala-butter-cookies.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 2570 },
+        { "type": "half-carton", "detail": "Contains 9 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1290 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 150 }
+      ]
+    },
+    {
+      "id": "zeera-waala-bakery-cookies",
+      "name": "Zeera Waala Bakery Style Cookies",
+      "category": "biscuits",
+      "image": "assets/products/zeera-waala-cookies.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 2570 },
+        { "type": "half-carton", "detail": "Contains 9 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1290 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 150 }
+      ]
+    },
+    {
+      "id": "coconut-waala-cookies",
+      "name": "Coconut Waala Cookies",
+      "category": "biscuits",
+      "image": "assets/products/coconut-waala-cookies.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 2570 },
+        { "type": "half-carton", "detail": "Contains 9 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1290 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 150 }
+      ]
+    },
+    {
+      "id": "tea-time-fine-line-biscuits",
+      "name": "Tea Time Fine Line Biscuits",
+      "category": "biscuits",
+      "image": "assets/products/tea-time-fine-line-biscuits.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1710 },
+        { "type": "half-carton", "detail": "Contains 9 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 860 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 100 }
+      ]
+    },
+    {
+      "id": "cookiez-pineapple-coconut-cookies",
+      "name": "Cookiez Pineapple & Coconut Cookies",
+      "category": "biscuits",
+      "image": "assets/products/cookiez-pineapple-coconut-cookies.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 2570 },
+        { "type": "half-carton", "detail": "Contains 9 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1290 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 150 }
+      ]
+    },
+    {
+      "id": "crispy-zeera-biscuits",
+      "name": "Crispy Zeera Biscuits",
+      "category": "biscuits",
+      "image": "assets/products/crispy-zeera-biscuits.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 2050 },
+        { "type": "half-carton", "detail": "Contains 9 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1030 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 120 }
+      ]
+    },
+    {
+      "id": "classic-lemon-sandwich-biscuits",
+      "name": "Classic Lemon Sandwich Biscuits",
+      "category": "biscuits",
+      "image": "assets/products/classic-lemon-sandwich-biscuits.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 2050 },
+        { "type": "half-carton", "detail": "Contains 9 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1030 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 120 }
+      ]
+    },
+    {
+      "id": "mango-masti-sandwich-biscuits",
+      "name": "Mango Masti Sandwich Biscuits",
+      "category": "biscuits",
+      "image": "assets/products/mango-masti-sandwich-biscuits.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 2050 },
+        { "type": "half-carton", "detail": "Contains 9 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1030 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 120 }
+      ]
+    },
+    {
+      "id": "panjeeri-traditional-biscuits",
+      "name": "Panjeeri Traditional Biscuits",
+      "category": "biscuits",
+      "image": "assets/products/panjeeri-traditional-biscuits.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1710 },
+        { "type": "half-carton", "detail": "Contains 9 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 860 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 100 }
+      ]
+    },
+    {
+      "id": "milkoney-honey-milk-biscuits",
+      "name": "Milkoney Honey & Milk Biscuits",
+      "category": "biscuits",
+      "image": "assets/products/milkoney-honey-milk-biscuits.webp",
+      "available": true,
+      "packaging": [
+        { "type": "full-carton", "detail": "Contains 18 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 2570 },
+        { "type": "half-carton", "detail": "Contains 9 retail packs", "available": true, "min": 0, "max": 50, "step": 1, "price": 1290 },
+        { "type": "individual-box", "detail": "One retail pack per unit", "available": true, "min": 0, "max": 99, "step": 1, "default": true, "price": 150 }
+      ]
+    }
+  ]
+}
