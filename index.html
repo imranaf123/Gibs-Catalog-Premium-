@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Catalog</title>
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <meta name="theme-color" content="#E31B23">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="boot" class="boot" role="status" aria-live="polite">
+    <span class="boot-mark" aria-hidden="true"></span>
+    <p id="boot-message"></p>
+    <button id="boot-retry" class="primary-button boot-retry" type="button" hidden></button>
+  </div>
+
+  <div id="application" class="application" hidden>
+    <header id="app-header" class="app-header" data-search-open="false">
+      <div class="header-inner">
+        <button id="brand-home" class="brand-home" type="button">
+          <img id="brand-logo" src="assets/brand/logo.svg" width="130" height="80" alt="">
+        </button>
+        <div class="header-actions">
+          <button id="search-toggle" class="icon-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"></circle><path d="m16 16 4.3 4.3"></path></svg>
+          </button>
+          <button id="list-toggle" class="icon-button list-toggle" type="button" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h12v15H5V8"></path><path d="M3.5 5.5h11M8 10h8M8 14h8"></path></svg>
+            <span id="list-count-badge" class="count-badge" hidden></span>
+          </button>
+        </div>
+      </div>
+      <div id="search-row" class="search-row" hidden>
+        <label id="search-label" class="sr-only" for="search-input"></label>
+        <input id="search-input" type="search" autocomplete="off" enterkeyhint="search">
+        <button id="search-clear" class="search-clear" type="button" hidden></button>
+        <button id="search-close" class="search-close icon-button" type="button"></button>
+      </div>
+    </header>
+
+    <nav id="category-bar" class="category-bar" hidden>
+      <div id="category-chips" class="category-chips" role="group"></div>
+    </nav>
+
+    <main id="catalog-main" class="catalog-main">
+      <section id="catalog-view" class="catalog-view" aria-label="">
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+        <section id="no-results" class="no-results" hidden>
+          <p id="no-results-message"></p>
+          <button id="clear-search" class="text-button" type="button"></button>
+        </section>
+        <footer class="site-footer"><span>Designed &amp; Developed by <strong>Imran AF</strong></span></footer>
+      </section>
+
+      <button id="selection-backdrop" class="selection-backdrop" type="button" hidden></button>
+      <section id="selection-view" class="selection-view" aria-label="" aria-labelledby="selection-title" hidden>
+        <div class="selection-layout">
+          <div class="selection-main">
+            <div class="selection-heading">
+              <div class="selection-heading-row">
+                <h1 id="selection-title"></h1>
+                <button id="back-to-catalog" class="back-link" type="button"></button>
+              </div>
+              <p id="selection-count"></p>
+            </div>
+            <div class="selection-divider"></div>
+            <div id="selection-items" class="selection-items"></div>
+            <div id="selection-empty" class="selection-empty" hidden>
+              <p id="empty-selection-message"></p>
+              <button id="browse-products" class="primary-button" type="button"></button>
+            </div>
+            <div id="order-area" class="order-area">
+              <div id="selection-total" class="estimated-total-row" hidden>
+                <span id="selection-total-label" class="estimated-total-label"></span>
+                <span id="selection-total-value" class="estimated-total-value" aria-live="polite"></span>
+              </div>
+              <p id="selection-price-note" class="price-exclusion-note" hidden></p>
+              <a id="order-button" class="order-button" href="#" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.1A12.7 12.7 0 0 0 5.1 22.2L3.4 28.6l6.6-1.7A12.8 12.8 0 1 0 16 3.1Z"></path><path d="M11.3 10.2c.3-.6.6-.6.9-.6h.7c.2 0 .5.1.6.5l.9 2.3c.1.3.1.5-.1.7l-.7.8c-.2.2-.2.4 0 .7.5.9 1.3 1.7 2.2 2.3.9.6 1.6.9 1.9 1 .3.1.5.1.7-.2l.9-1.1c.2-.2.4-.3.7-.2l2.3 1.1c.3.2.5.2.5.5 0 .4-.2 1.5-.8 2-.6.6-1.4.8-2.2.8-.6 0-1.5-.2-2.6-.7-1.2-.5-2.6-1.3-4.2-2.9-1.6-1.6-2.5-3.1-3-4.3-.5-1.2-.6-2-.5-2.7.1-.7.5-1.4.8-1.8Z"></path></svg>
+                <span id="order-button-label"></span>
+              </a>
+              <p id="whatsapp-note" class="whatsapp-note"></p>
+              <div id="order-notice" class="order-notice" hidden>
+                <span id="order-notice-text"></span>
+                <a id="retry-whatsapp" class="text-button" hidden rel="noopener"></a>
+                <button id="copy-message" class="text-button" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <footer class="site-footer"><span>Designed &amp; Developed by <strong>Imran AF</strong></span></footer>
+        </div>
+      </section>
+    </main>
+
+    <div id="selection-bar" class="selection-bar" hidden>
+      <span id="selection-bar-count"></span>
+      <button id="view-list-button" class="view-list-button" type="button"></button>
+    </div>
+
+    <div id="sheet-backdrop" class="sheet-backdrop" hidden>
+      <section id="packaging-sheet" class="packaging-sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-heading" tabindex="-1">
+        <div id="sheet-handle" class="sheet-handle-wrap" aria-hidden="true"><span class="sheet-handle"></span></div>
+        <div class="sheet-product-row">
+          <img id="sheet-product-image" class="sheet-product-image" width="72" height="48" alt="">
+          <h2 id="sheet-product-name"></h2>
+          <button id="sheet-close" class="icon-button sheet-close" type="button"></button>
+        </div>
+        <h3 id="sheet-heading" class="sheet-heading"></h3>
+        <div id="sheet-options" class="sheet-options" role="group"></div>
+        <div id="sheet-total" class="sheet-total" hidden>
+          <span id="sheet-total-label"></span>
+          <span id="sheet-total-value" class="sheet-total-value" aria-live="polite"></span>
+          <span id="sheet-total-note" class="price-exclusion-note" hidden></span>
+        </div>
+        <button id="sheet-submit" class="primary-button sheet-submit" type="button"></button>
+      </section>
+    </div>
+
+    <div id="unavailable-tooltip" class="unavailable-tooltip" role="tooltip" hidden>
+      <span id="unavailable-message"></span>
+      <button id="tooltip-close" type="button" aria-label=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
